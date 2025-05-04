@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Decidendi Lexis - Leitor Jurídico</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📚 Decidendi Lexis</h1>
+    <p>Leitor PDF erudito para juristas e estudiosos</p>
+  </header>
+
+  <main>
+    <section class="upload">
+      <input type="file" id="file-input" accept=".pdf"/>
+    </section>
+
+    <section class="controls">
+      <button id="prev">⬅ Página Anterior</button>
+      <span id="page-info">Página 0 de 0</span>
+      <button id="next">Próxima Página ➡</button>
+
+      <div class="colors">
+        <label>Destaque:</label>
+        <button class="color-btn" data-color="yellow">🟨</button>
+        <button class="color-btn" data-color="blue">🟦</button>
+        <button class="color-btn" data-color="green">🟩</button>
+        <button class="color-btn" data-color="pink">🩷</button>
+        <button class="color-btn" data-color="red">🟥</button>
+      </div>
+    </section>
+
+    <canvas id="pdf-canvas"></canvas>
+
+    <section class="notes">
+      <h2>Anotações</h2>
+      <textarea id="note-input" placeholder="Digite sua anotação..."></textarea>
+      <button id="save-note">Salvar Anotação</button>
+      <ul id="note-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 Decidendi Lexis por B-Adv</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
